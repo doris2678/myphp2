@@ -1,5 +1,7 @@
 <?php
+
 // 取得目前的年月（或從 URL 參數取得）
+
 $year = isset($_GET['year']) ? intval($_GET['year']) : date('Y');
 $month = isset($_GET['month']) ? intval($_GET['month']) : date('m');
 
