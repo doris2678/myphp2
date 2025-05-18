@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>線上日曆</title>
     <style>
-        a,h2{
-          margin-bottom:10px;
-          text-align:center;
-          font-size:18px;          
-        }
         h1{
             text-align:center;
             color:blue;
@@ -196,12 +191,14 @@ for($i=0;$i<$theDaysOfMonth;$i++){
 print_r($monthDays);
 echo "</pre>"; */
 ?>
-<h2><?=$year;?>年<?=$month;?>月</h2>
 
 <div style="display:flex;width:60%;margin:0 auto;justify-content:space-between;">
+
     <a href="?year=<?=$prevyear;?>&month=<?=$prev;?>">上一月</a>
     <a href="?year=<?=$nextyear;?>&month=<?=$next;?>">下一月</a>
 </div>
+
+<h2><?=$year;?>年<?=$month;?>月</h2>
 
 <?php
 
