@@ -93,6 +93,10 @@
   </style>
 </head>
 <body>
+<?php 
+session_start();
+if(!isset($_SESSION['login'])){
+?>
   <div class="login_mem">
     <h2>會員登入</h2>
     <form action="check.php" method="post">
@@ -110,6 +114,11 @@
       </div>
     </form>
   </div>
+<?php
+ }else{
+    echo "登入成功";    
+}    
+?>
 </body>
 </html>
 
