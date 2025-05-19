@@ -24,12 +24,13 @@
         }
     ?>
     </title>
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <?php  include_once "header.php";    ?>
-    <?php          
+    <?php  
+        
         echo $page;
         $file=$page.".php";
 
@@ -38,6 +39,7 @@
         }else{
             include "main.php";
         }
+        
 
        /*  switch($page){
             case 'list':
